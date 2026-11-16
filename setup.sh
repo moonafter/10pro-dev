@@ -76,7 +76,8 @@ install_deps() {
 setup_esp() {
   log "==> 配置 ESP-IDF 环境（独立于 BK）"
   mkdir -p "$ESP_ROOT"
-
+  mkdir -p "$ESP_PYENV"
+  
   if [ ! -d "$ESP_IDF/.git" ]; then
     log "克隆 ESP-IDF $ESP_IDF_VERSION ..."
     git clone -b "$ESP_IDF_VERSION" "$ESP_IDF_GIT_URL" "$ESP_IDF"
