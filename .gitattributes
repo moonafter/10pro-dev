@@ -1,0 +1,11 @@
+# 让 Git 自动判断文本文件
+* text=auto
+
+# 所有 shell 脚本强制以 LF 存入仓库、以 LF 检出
+*.sh text eol=lf
+
+# 如果还有别的需要保持 LF 的文本类型，一并加上
+*.py  text eol=lf
+*.c   text eol=lf
+*.h   text eol=lf
+Makefile text eol=lf
